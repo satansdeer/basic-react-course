@@ -16,7 +16,10 @@
   * [Working With Forms](#)
   * [Using Refs](#)
   * [Rendering Lists](#)
-  * [Higher Order Components](#)
-  * [Routing With React Router#](#)
   * [Render Props](#)
+  * [Error Handling with componentDidCatch](#)
+
+### Bonus
+  * [Routing With React Router#](#)
   * [Recompose](#)
+  * [Higher Order Components](#)
