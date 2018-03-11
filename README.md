@@ -13,6 +13,7 @@
   * [Handling Events](#)
   * [Using State](#)
   * [React Lifecycle Methods](#)
+  * [React Components, pure and Stateless](#)
   * [Working With Forms](#)
   * [Using Refs](#)
   * [Rendering Lists](#)
