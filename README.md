@@ -3,7 +3,7 @@
 ## Contents
 
 ### Setting up
-  * [Create-react-app](/create_react_app)
+  * [Create-react-app](/create_react_app.md)
   * [Prettier](#)
 
 ### Basic React
