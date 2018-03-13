@@ -18,7 +18,7 @@
   * [Error Handling with componentDidCatch](#)
 
 ### Bonus
-  * [Pressier and ESlint](#)
+  * [Prettier and ESlint](#)
   * [Routing With React Router](#)
   * [Recompose](#)
   * [Higher Order Components](#)
