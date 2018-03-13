@@ -5,7 +5,7 @@
   * ✅ [Create-react-app](/create_react_app.md)
   * ✅ [Introduction to JSX](/jsx.md)
   * ✅ [Creating Custom Component](/custom_component.md)
-  * [Properties and PropTypes](/properties_and_proptypes.md)
+  * ✅ [Properties and PropTypes](/properties_and_proptypes.md)
   * [Conditional Rendering](#)
   * [Handling Events](#)
   * [Using State](#)
