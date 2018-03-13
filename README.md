@@ -2,12 +2,8 @@
 
 ## Contents
 
-### Setting up
-  * [Create-react-app](/create_react_app.md)
-  * [Prettier](#)
-
-### Basic React
-  * [JSX - Hello World Component](#)
+  * ✅ [Create-react-app](/create_react_app.md)
+  * [JSX - Hello World Component](/jsx.md)
   * [Properties and PropTypes](#)
   * [Conditional Rendering](#)
   * [Handling Events](#)
