@@ -6,7 +6,7 @@
   * ✅ [Introduction to JSX](/jsx.md)
   * ✅ [Creating Custom Component](/custom_component.md)
   * ✅ [Properties and PropTypes](/properties_and_proptypes.md)
-  * [Conditional Rendering](#)
+  * ✅ [Conditional Rendering](#)
   * [Handling Events](#)
   * [Using State](#)
   * [React Lifecycle Methods](#)
