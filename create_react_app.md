@@ -12,43 +12,34 @@ So if you have modern node – just run:
 npx create-react-app react-app
 ```
 
-And if you have older version – update it or install `create-react-app` globablly and run it:
+If you have older version – update it or install `create-react-app` globally and run it:
 
 ```sh
 yarn add global create-react-app
 create-react-app react-app
 ```
 
-## Remove Unnecessary Files
+## Getting Familiar With File Structure
 
-By default `create-react-app` creates a handflul of files, adds some styles and the logo image. We don't need them so run this command and remove those files:
+By default `create-react-app` creates a handflul of files, let's go through them.
 
-```sh
-rm src/App.css src/index.css src/logo.svg src/registerServiceWorker.js
-```
+In project root along with other files it creates two folders `public` and `src`.
 
-Good, now we need to remove references to those files.
+In `public` folder we have static files `index.html`, `favicon.ico` and `manifest.json`.
 
-Open `src/index.js` and remove the line `import './index.css'.
+* `index.html` is our template, it contains page metadata, link to our `js` bundle and our layout with `<div id="root">` which we'll use later to render our app. 
+* `favicon.ico` is basically an icon of your site, it is usuall shown along with site title on your browsers tabs.
+* `manifest.json` allows to install your web-app to the homescreen of the device. It provides useful information like what icon should be used or app name to display.
 
-In the end of file there is a line `registerServiceWorker()`, this is useful if you need to add caching for your app. For instance if you need to make your app available for offline usage or for users with slow networks. We don't need it now so just remove this line, also remove the `import` statement.
+In `src` folder there is `index.js`, `App.js`, test for `App.js`, bunch of `css` files, `logo.svg` and and `registerServiceWorker.js`.
 
-Your `src/index.js` should look like this:
+* `index.js` is an entry point of our app. This is wrere `create-react-app` script starts to build your app from.
+* `App.js` is our app's root component, we'll get back to it later.
+* `registerServiceWorker.js` initializes a service worker for your app. Service workers are kind of proxies between your app and server, they intercept and modify navigation and resource requests. They allow to make your app available on slow interrnet or even offline. 
 
-```js
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
+Let's modify our app a bit, you know, to feel like at home.
 
-ReactDOM.render(<App />, document.getElementById("root"));
-```
-
-Then open `src/App.js`, remove these lines:
-
-```js
-import './App.css'
-import './logo.svg'
-```
+Open `src/App.js`, remove `logo.svg` import:
 
 Also let's clean up the `render` method. Make the file look like this:
 
@@ -64,6 +55,12 @@ class App extends Component {
 export default App;
 ```
 
-Now run the app. Switch back to terminal and run `yarn start`.
+As we don't use `logo.svg` anymore – remove it:
+
+```sh
+rm src/logo.svg
+```
+
+Now run the app. Switch back to terminal and run `yarn start` (or `npm start` if you don't use yarn).
 
 The script will start the server on 'localhost:3000', you should see the "Hello world" header.
