@@ -4,7 +4,7 @@
 
   * ✅ [Create-react-app](/create_react_app.md)
   * ✅ [Introduction to JSX](/jsx.md)
-  * [Creating Custom Component](/custom_component.md)
+  * ✅ [Creating Custom Component](/custom_component.md)
   * [Properties and PropTypes](#)
   * [Conditional Rendering](#)
   * [Handling Events](#)
@@ -18,6 +18,7 @@
   * [Error Handling with componentDidCatch](#)
 
 ### Bonus
+  * [Pressier and ESlint](#)
   * [Routing With React Router](#)
   * [Recompose](#)
   * [Higher Order Components](#)
