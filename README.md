@@ -3,7 +3,8 @@
 ## Contents
 
   * ✅ [Create-react-app](/create_react_app.md)
-  * [JSX - Hello World Component](/jsx.md)
+  * ✅ [Introduction to JSX](/jsx.md)
+  * [Creating Custom Component](/custom_component.md)
   * [Properties and PropTypes](#)
   * [Conditional Rendering](#)
   * [Handling Events](#)
