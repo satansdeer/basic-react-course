@@ -7,7 +7,7 @@
   * ✅ [Creating Custom Component](/custom_component.md)
   * ✅ [Properties and PropTypes](/properties_and_proptypes.md)
   * ✅ [Conditional Rendering](/conditional_rendering.md)
-  * [Handling Events](#)
+  * [Handling Events](/handling_events.md)
   * [Using State](#)
   * [React Lifecycle Methods](#)
   * [React Components, pure and Stateless](#)
