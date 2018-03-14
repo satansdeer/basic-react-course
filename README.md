@@ -8,7 +8,7 @@
   * ✅ [Properties and PropTypes](/properties_and_proptypes.md)
   * ✅ [Conditional Rendering](/conditional_rendering.md)
   * ✅ [Handling Events](/handling_events.md)
-  * [Using State](/using_state.md)
+  * ✅ [Using State](/using_state.md)
   * [React Lifecycle Methods](#)
   * [React Components, pure and Stateless](#)
   * [Working With Forms](#)
