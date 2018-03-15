@@ -9,7 +9,7 @@
   * ✅ [Conditional Rendering](/conditional_rendering.md)
   * ✅ [Handling Events](/handling_events.md)
   * ✅ [Using State](/using_state.md)
-  * [React Lifecycle Methods](#)
+  * ✅ [React Lifecycle Methods](/lifecycle_methods.md)
   * [React Components, pure and Stateless](#)
   * [Working With Forms](#)
   * [Using Refs](#)

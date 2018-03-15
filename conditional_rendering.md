@@ -31,8 +31,8 @@ render(){
     return (
       <div>'Here is a unicorn: 🦄'</div>
     )
-    return (<div>Sorry, no unicorn for you.</div>)
   }
+  return (<div>Sorry, no unicorn for you.</div>)
 }
 ```
 
@@ -55,3 +55,18 @@ render(){
   )
 }
 ```
+
+If you only need to render a block if some condition is true – you can use the `&&` operator
+
+```js
+render(){
+  const { showUnicorn } = this.props;
+  return(
+    <div>
+      { showUnicorn
+        && <div>'Here is a unicorn: 🦄'</div>
+      }
+      <div>Will be rendered anyway</div>
+    </div>
+  )
+}
