@@ -15,7 +15,7 @@
   * ✅ [Using Refs](/using_refs.md)
   * ✅ [Working With Forms](/forms.md)
   * ✅ [Rendering Lists](/lists.md)
-  * [Styling Components](/styles.md)
+  * ✅ [Styling Components](/styles.md)
 
 ### Bonus
   * [Prettier and ESlint](#)
