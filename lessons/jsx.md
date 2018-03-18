@@ -1,4 +1,8 @@
-# JSX
+---
+path: "/lessons/jsx"
+date: "2017-11-07"
+title: "JSX"
+---
 
 Open the `src/App.js` file again. Notice that we imported `React` but actually never use it? Actually, this is an illusion. Usage of `React` module is abstracted from us by the `jsx` syntax.
 

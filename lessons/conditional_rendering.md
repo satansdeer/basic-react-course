@@ -1,4 +1,8 @@
-# Conditional Rendering
+---
+path: "/lessons/conditional-rendering"
+date: "2017-11-07"
+title: "Conditional Rendering"
+---
 
 Let's imagine that we need to have a component that takes some boolean prop and then renders one or another template depending on it.
 

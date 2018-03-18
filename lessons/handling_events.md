@@ -1,4 +1,8 @@
-# Handling Events
+---
+path: "/lessons/handling-events"
+date: "2017-11-07"
+title: "Handling Events"
+---
 
 Handling events with React is very similar to handling events with DOM. But if with DOM events it's considered as a bad practice to apply events listeners in your html code – in React it's common practice and is totally fine.
 

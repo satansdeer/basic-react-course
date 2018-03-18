@@ -1,4 +1,8 @@
-# Using State
+---
+path: "/lessons/using-state"
+date: "2017-11-07"
+title: "Using State"
+---
 
 Create new component. Let's call is `StateExample`. Open the `src/StateExample.js` and add the following code
 

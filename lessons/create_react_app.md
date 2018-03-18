@@ -1,4 +1,8 @@
-# Create React App
+---
+path: "/lessons/create-react-app"
+date: "2017-11-07"
+title: "Create React App"
+---
 
 I recommend using `create-react-app` to set up the environment. It will save you a lot of time.
 

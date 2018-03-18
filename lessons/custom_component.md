@@ -1,4 +1,8 @@
-# Custom Components
+---
+path: "/lessons/custom-component"
+date: "2017-11-07"
+title: "Creating Custom Component"
+---
 
 Currently, we render our header using an `<h1>` tag provided by default. Let's learn how to create custom ones.
 

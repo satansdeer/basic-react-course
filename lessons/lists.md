@@ -1,4 +1,8 @@
-# Working With Lists
+---
+path: "/lessons/lists"
+date: "2017-11-07"
+title: "Rendering Lists"
+---
 
 Let's start with an example. Create the `src/ListExample.js` in our project, and add the following
 

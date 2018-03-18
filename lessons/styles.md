@@ -1,4 +1,8 @@
-# Styles
+---
+path: "/lessons/styles"
+date: "2017-11-07"
+title: "Styling Components"
+---
 
 There are several options to style your components. By default `create-react-app` sets up `webpack` so it properly loads stylesheet files. In this course I encourage you to use what `create-react-app` provides.
 

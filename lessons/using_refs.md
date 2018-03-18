@@ -1,4 +1,8 @@
-# Using Refs
+---
+path: "/lessons/using-refs"
+date: "2017-11-07"
+title: "Using Refs"
+---
 
 The normal way of how React component can affect its children – is by passing `props` to it. While this declarative way is preferred – it's not always possible.
 

@@ -1,4 +1,8 @@
-# Properties And Proptypes
+---
+path: "/lessons/properties-and-proptypes"
+date: "2017-11-07"
+title: "Properties And Proptypes"
+---
 
 Our `Header` component can only display the `Hello world` text. Let's make it possible to change it by passing the `prop` to it.
 

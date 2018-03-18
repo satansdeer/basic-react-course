@@ -1,4 +1,8 @@
-# Pure, Stateless Components
+---
+path: "/lessons/stateless-components"
+date: "2017-11-07"
+title: "React Components, Pure and Stateless"
+---
 
 In all previous examples we always created components as classes, extending the `React.Component`. Actually it's overkill for a lot of cases.
 

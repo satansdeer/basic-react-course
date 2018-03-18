@@ -1,4 +1,8 @@
-# Working With Forms
+---
+path: "/lessons/forms"
+date: "2017-11-07"
+title: "Working With Forms"
+---
 
 Create new component `src/FormExapmle.js` with following content
 
