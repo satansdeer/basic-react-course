@@ -10,7 +10,20 @@ module.exports = {
         name: 'markdown-pages',
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 590,
+            },
+          },
+        ],
+      },
+    },
     'gatsby-plugin-react-helmet',
+    `gatsby-plugin-sharp`,
   ],
 }
