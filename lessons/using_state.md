@@ -4,91 +4,194 @@ date: "2017-11-07"
 title: "Using State"
 ---
 
-Create new component. Let's call is `StateExample`. Open the `src/StateExample.js` and add the following code
+## Contents
+
+* [What Is State](#what_is_state)
+* [Difference from Props](#differente_from_props)
+* [Setting Initial State](#setting_initial_state)
+  * [Using `getInitialState` method](#getinitialstate)
+  * [Inside `constructor` method](#insideconstructor)
+  * [As a class property](#asaclassprop)
+* [Updating State](#updating_state)
+  * [First Rule Of Updating State](#first_rule)
+  * [Warning, `setState` Is Asynchronous](#warning_async)
+  * [State Updates Are Merged](#state_merged)
+
+## <a name="what_is_state"></a>What Is State
+
+So basically `state` is a plain javascript object where component stores relevant data. The difference between `state` and any other object you can store inside your component is that React monitors it and will trigger re-render on `state` update.
+
+As state updates cause re-render – it makes sense to only store variables that are needed for rendering. So if you have some variable related to the component, but that you don't use in your `render` method – it makes sense to just use it as a regular instance variable and not put it into `state`.
+
+Also, consider `state` as private to the component. So you can only access or update `state` from inside the component. You can't access it from its parent nor from its children.
+
+## <a name="differente_from_props"></a>Difference From Props
+
+Just like `props` – `state` is an object and it causes the component to re-render when updated. The difference is that `props` come from parent component and `state` is internal to the component.
+
+Also, you can't update props inside component itself. Basically `props` come from outside and component has no control over it, and `state` is internal and component fully controls it.
+
+Here is the diagram:
+
+![state vs props](state_vs_props.png)
+
+## <a name="setting_initial_state"></a>Setting Initial State
+
+There are several methods of defining the initial state of your component.
+
+* [Using `getInitialState` method](#getinitialstate)
+* [Inside `constructor` method](#insideconstructor)
+* [As a class property](#asaclassprop)
+
+### <a name="getinitialstate"></a>Using `getInitialState` Method
+
+If you define your component using `React.createClass` – use `getInitialState`;
 
 ```js
-import React, { Component } from 'react'
+import React from 'react';
 
-class StateExample extends React.Component {
-  handleClick(event){
-    console.log(event)
-  }
+const ExampleComponent = React.createClass({
+  getInitialState () {
+    return {
+      someKey: 'someValue'
+    };
+  },
 
   render() {
     return (
-      <div>
-        <button onClick={this.handleClick}></button>
-      </div>
-    )
+      <div>{this.state.someKey}</div>
+    );
+  }
+});
+
+export default ExampleComponent;
+```
+
+### <a name="insideconstructor"></a>Inside `constructor` Method
+
+If you define your component using `ES6` classes – define the `state` inside your `constructor` method:
+
+```js
+import React from 'react';
+
+class ExampleComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      someKey: 'someValue'
+    };
+  }
+  render() {
+    return (
+      <div>{this.state.someKey}</div>
+    );
   }
 }
 
-export default StateExample
+export default ExampleComponent;
 ```
 
-Let's make this compoenent count amount of clicks on our button. We'll need to store tha amount of clicks somewhere.
+Keep in mind that in order for `this` to be defined in your `constructor` – you should call `super()` first. Also, don't forget to accept `props` as an argument and pass it to `super` as well.
 
-For this case React has default property `state` let's define our state by adding `constructor` method
+### <a name="asaclassprop"></a>As a Class Property
+
+Another option if you use `ES6` classes would be using class property. It allows you to write way less boilerplate:
 
 ```js
-constructor(){
-  super()
+import React from 'react';
+
+class ExampleComponent extends React.Component {
+  state = { someKey: 'someValue' }
+
+  render() {
+    return (
+      <div>{this.state.someKey}</div>
+    );
+  }
+}
+
+export default ExampleComponent;
+```
+
+## <a name="updating_state"></a>Updating State
+
+There are several things to note about updating state:
+
+* [First Rule Of Updating State](#first_rule)
+* [Warning, `setState` Is Asynchronous](#warning_async)
+* [State Updates Are Merged](#state_merged)
+
+### <a name="first_rule"></a>First Rule Of Updating State
+
+And first rule of updating state is "Never tell anyone about updating state", oh wait, it's from somewhere else. First rule is – don't update `state` directly:
+
+```js
+// DON'T
+this.state.someValueInState = 'NEW VALUE';
+```
+
+There is only one exception for setting state directly – you can define your initial state in your constructor
+
+In all other places `this.setState` instead.
+
+```js
+this.setState({someValueInState: 'NEW VALUE'});
+```
+
+### <a name="warning_async"></a>Warning, `setState` Is Asynchronous
+
+Here are two things to note. First, don't rely on `this.state` and `this.props` when calculating next state, as they might be updates asynchronously.
+
+```js
+// DON'T
+this.setState({
+  counter: this.state.counter + this.props.increment,
+});
+```
+
+For such cases use the form of `setState` that accepts `function` instead of `object`:
+
+```js
+this.setState((prevState, props) => ({
+  counter: prevState.counter + props.increment
+}));
+```
+
+And second thing – as `setState` updates state asynchronously – you cant rely on `this.state` immediately after calling `this.setState`.
+
+If you need some code to be executed only after state is really updated and all values are assigned – use callback provided by `this.setState`.
+
+```js
+this.setState({
+    someKey: 'someValue',
+  }, () => {
+    // This will be executed only after state is really updated
+  }
+);
+```
+
+### <a name="state_merged"></a>State Updates Are Merged
+
+When you call setState(), React merges the object you provide into the current state. So you don't have to worry about overriding values you don't want to override.
+
+Imaging having some state with two fields defined in your constructor:
+
+```js
+constructor(props) {
+  super(props);
   this.state = {
-    count: 0
-  }
+    someKey: 'someValue',
+    someOtherKey: 'someOtherValue'
+  };
 }
 ```
 
-First we had to call `super` to be able to use `this`. This is just ES6 rules. Then we define our state. And as you can see, the state is actually just a plain object.
-
-Now lets update our state and increment the `count` on every click.
-
-Turns out that you can't do this directly. React has special method for it, called `setState`. 
-
-Let's add it to our `handleClick` function.
+Now you can update them individually by calling `setState`:
 
 ```js
-handleClick() {
-  this.setState({
-    count: this.state.count + 1
-  })
-}
+this.setState({
+  someKey: 'someNewValue'
+});
 ```
 
-If you run this code – you'll get an error because `this` in our function belongs to it's internal scope. In order to give `this` the scope of our compoenent – you have several options.
-
-You can call `bind(this)` explicitly. Either in constructor
-
-```
-this.handleClick = this.handleClick.bind(this)
-```
-
-Or in your event prop definition `onClick={this.handleClick.bind(this)}`
-
-Another option is to use fat arrow functions do define your handlers
-
-```js
-handleClick = event => {
-  this.setState({
-    count: this.state.count + 1
-  })
-}
-```
-
-This way your function will get the proper reference to `this` automatically.
-
-Now let's display the value from our state.
-
-Accessing state is very similar to accessing props, you just call `state` instead of `props`.
-
-Add `div` where we'll display the clicks count
-
-```js
-<div>{`Count ${this.state.count}`}</div>
-```
-
-Click the button – the count number will increase.
-
-The `setState` updates only the keys that you list in your updated object. For instance, if our initial `state` would contatain any other fields, like some text value – after we'd call `setState` with count field – that text key would remain unchanged.
-
-Try to add some variable to your state and then update the state with `setState` method.
+In this example `this.state.someOtherKey` will remain unchanged.
