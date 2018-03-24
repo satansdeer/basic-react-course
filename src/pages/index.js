@@ -1,14 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import LandingPage from './LandingPage'
 
-const IndexPage = () => (
-  <div>
-    <p>
-      Welcome to this course, you can start by reading the following chapters.
-    </p>
-    <p>Now go build something great.</p>
-    <Link to="/lessons/">Lessons</Link>
-  </div>
-)
+const IndexPage = () => <LandingPage />
 
 export default IndexPage
