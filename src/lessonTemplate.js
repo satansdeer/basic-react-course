@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import withAuthorization from './components/Session/withAuthorization'
 
-export default function Template({
+function LessonTemplate({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
@@ -32,3 +33,7 @@ export const pageQuery = graphql`
     }
   }
 `
+
+const authCondition = authUser => !!authUser
+
+export default withAuthorization(authCondition)(LessonTemplate)

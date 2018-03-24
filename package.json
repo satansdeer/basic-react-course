@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "firebase": "^4.8.0",
     "gatsby": "^1.9.236",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-create-client-paths": "^1.0.7",

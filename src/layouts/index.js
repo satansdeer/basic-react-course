@@ -5,6 +5,8 @@ import Helmet from 'react-helmet'
 import Header from '../components/Header'
 import './index.css'
 
+import withAuthentication from '../components/Session/withAuthentication'
+
 class TemplateWrapper extends Component {
   render() {
     const { children } = this.props
@@ -36,7 +38,6 @@ class TemplateWrapper extends Component {
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
-  location: PropTypes.object,
 }
 
-export default TemplateWrapper
+export default withAuthentication(TemplateWrapper)
