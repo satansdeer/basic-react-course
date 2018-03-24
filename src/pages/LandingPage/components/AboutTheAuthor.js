@@ -1,7 +1,9 @@
 import React from 'react'
 
 const containerStyle = {
-  padding: 80,
+  padding: 20,
+  paddingTop: 80,
+  paddingBottom: 80,
   maxWidth: 800,
   margin: 'auto',
 }
