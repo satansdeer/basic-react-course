@@ -7,16 +7,16 @@ import withAuthorization from '../components/Session/withAuthorization'
 
 import SignOutButton from '../components/SignOut'
 
-const AccountPage = (props, { authUser }) => (
+const AccountPage = props => (
   <div>
-    <h1>Account: {authUser.email}</h1>
+    <h1>Account: {props.authUser.email}</h1>
     <PasswordForgetForm />
     <PasswordChangeForm />
     <SignOutButton />
   </div>
 )
 
-AccountPage.contextTypes = {
+AccountPage.propTypes = {
   authUser: PropTypes.object,
 }
 
