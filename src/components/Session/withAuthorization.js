@@ -9,6 +9,7 @@ const withAuthorization = condition => Component => {
   class WithAuthorization extends React.Component {
     state = { authUser: null }
     componentDidMount() {
+      console.log('---')
       firebase.auth.onAuthStateChanged(authUser => {
         authUser && this.setState(() => ({ authUser }))
         if (!condition(authUser)) {
