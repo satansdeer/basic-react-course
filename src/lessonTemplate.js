@@ -9,6 +9,7 @@ function LessonTemplate({
   const { frontmatter, html } = markdownRemark
   return (
     <div className="blog-post-container">
+      <Link to="/lessons">Back to contents</Link>
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
         <div
@@ -16,7 +17,7 @@ function LessonTemplate({
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
-      <Link to="/">Go back to the homepage</Link>
+      <Link to="/lessons">Back to contents</Link>
     </div>
   )
 }
