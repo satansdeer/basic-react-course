@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Header } from './components'
+import { Header, AboutTheCourse, AboutTheAuthor } from './components'
 
 const LandingPage = () => (
   <div>
     <Header />
-    <p>Now go build something great.</p>
+    <AboutTheCourse />
+    <AboutTheAuthor />
     <Link to="/lessons/">Lessons</Link>
   </div>
 )

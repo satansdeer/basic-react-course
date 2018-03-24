@@ -35,8 +35,18 @@ const linkStyle = {
   display: 'block',
   width: 300,
   margin: 'auto',
+  marginBottom: 75,
   textAlign: 'center',
   borderRadius: 6,
+}
+
+const mottoStyle = {
+  fontSize: 26,
+  maxWidth: 800,
+  textAlign: 'center',
+  margin: 'auto',
+  lineHeight: 1.6,
+  letterSpacing: 0.4,
 }
 
 const Header = () => (
@@ -46,6 +56,10 @@ const Header = () => (
     <a style={linkStyle} href="/signup">
       Start learning now
     </a>
+    <p style={mottoStyle}>
+      Start building real ReactJS apps. Jump in with best practices, solid
+      understanding and confidence.
+    </p>
   </div>
 )
 
