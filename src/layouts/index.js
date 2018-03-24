@@ -40,4 +40,4 @@ TemplateWrapper.propTypes = {
   children: PropTypes.func,
 }
 
-export default withAuthentication(TemplateWrapper)
+export default TemplateWrapper

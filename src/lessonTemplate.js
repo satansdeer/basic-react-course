@@ -7,6 +7,7 @@ function LessonTemplate({
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
+  console.log('LessonTemplate --', frontmatter.title)
   return (
     <div className="blog-post-container">
       <Link to="/lessons">Back to contents</Link>
