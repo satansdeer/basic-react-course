@@ -6,6 +6,7 @@
   "dependencies": {
     "gatsby": "^1.9.236",
     "gatsby-link": "^1.6.39",
+    "gatsby-plugin-create-client-paths": "^1.0.7",
     "gatsby-plugin-react-helmet": "^2.0.8",
     "gatsby-plugin-sharp": "^1.6.41",
     "gatsby-remark-images": "^1.5.56",
