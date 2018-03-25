@@ -7,6 +7,8 @@ const headerStyle = {
     'linear-gradient(63deg, rgba(48,38,83,1) 0%, rgba(62,38,119,1) 68%, rgba(74,33,148,1) 100%)',
   paddingTop: 65,
   paddingBottom: 85,
+  paddingLeft: 15,
+  paddingRight: 15,
   fontFamily: 'Open Sans',
   fontSize: 60,
   fontWeight: 'extra-bold',
@@ -33,11 +35,16 @@ const linkStyle = {
   textDecoration: 'none',
   padding: 20,
   display: 'block',
-  width: 300,
+  maxWidth: 350,
   margin: 'auto',
   marginBottom: 75,
+  lineHeight: 1.5,
   textAlign: 'center',
   borderRadius: 6,
+  boxShadow:
+    '0 0 0 1px rgba(16,22,26,.1),0 4px 8px rgba(16,22,26,.2),0 18px 46px 6px rgba(16,22,26,.2)',
+  textTransform: 'uppercase',
+  fontFamily: 'Open Sans',
 }
 
 const mottoStyle = {
@@ -52,7 +59,7 @@ const mottoStyle = {
 const Header = () => (
   <div style={headerStyle}>
     <h1 style={h1style}>Basic React</h1>
-    <h2 style={h2style}>Learn react.js in just a couple of days.</h2>
+    <h2 style={h2style}>Learn ReactJS in just a couple of days.</h2>
     <a style={linkStyle} href="/signup">
       Start learning now
     </a>
