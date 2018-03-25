@@ -15,7 +15,7 @@ const headerStyle = {
 
 const AboutTheCourse = () => (
   <div style={containerStyle}>
-    <h3 style={headerStyle}>About The Course</h3>
+    <h3 style={headerStyle}>What You'll Learn</h3>
     <p>
       Et architecto molestias nostrum dolores. Expedita fugiat minima minima
       quia voluptas laboriosam rerum officia. Fugiat natus autem praesentium

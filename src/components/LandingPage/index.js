@@ -7,7 +7,6 @@ const LandingPage = () => (
     <Header />
     <AboutTheCourse />
     <AboutTheAuthor />
-    <Link to="/lessons/">Lessons</Link>
   </div>
 )
 
