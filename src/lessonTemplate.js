@@ -10,7 +10,6 @@ function LessonTemplate({
   console.log('LessonTemplate --', frontmatter.title)
   return (
     <div className="blog-post-container">
-      <Link to="/lessons">Back to contents</Link>
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
         <div
@@ -18,7 +17,6 @@ function LessonTemplate({
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
-      <Link to="/lessons">Back to contents</Link>
     </div>
   )
 }

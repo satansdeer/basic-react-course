@@ -9,11 +9,14 @@ const Header = () => (
       background:
         'linear-gradient(63deg, rgba(48,38,83,1) 0%, rgba(62,38,119,1) 68%, rgba(74,33,148,1) 100%)',
       marginBottom: '1.45rem',
+      position: 'fixed',
+      width: '100%',
+      zIndex: 11,
     }}
   >
     <div
       style={{
-        margin: '0 auto',
+        marginLeft: 0,
         maxWidth: 960,
         padding: '1.45rem 1.0875rem',
       }}
