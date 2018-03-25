@@ -6,6 +6,7 @@ const containerStyle = {
   paddingBottom: 40,
   maxWidth: 800,
   margin: 'auto',
+  marginBottom: 80,
   borderRadius: 8,
   background: '#fff',
   boxShadow:
