@@ -49,6 +49,7 @@ class SignInForm extends Component {
     return (
       <form onSubmit={this.onSubmit}>
         <input
+          style={{ display: 'block', marginBottom: 15, paddingLeft: 10 }}
           value={email}
           onChange={event =>
             this.setState(updateByPropertyName('email', event.target.value))
@@ -57,6 +58,7 @@ class SignInForm extends Component {
           placeholder="Email Address"
         />
         <input
+          style={{ display: 'block', marginBottom: 15, paddingLeft: 10 }}
           value={password}
           onChange={event =>
             this.setState(updateByPropertyName('password', event.target.value))

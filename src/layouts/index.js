@@ -6,12 +6,15 @@ import Header from '../components/Header'
 //import Footer from '../components/Footer'
 import Navigation from '../components/Navigation'
 import './index.css'
+import styles from './layout.module.css'
 
 import withAuthentication from '../components/Session/withAuthentication'
 
 class TemplateWrapper extends Component {
   render() {
     const { children } = this.props
+
+    const { pathname } = this.props.location
 
     return (
       <div>
@@ -22,20 +25,13 @@ class TemplateWrapper extends Component {
             { name: 'keywords', content: 'react, javascript' },
           ]}
         />
-        {this.props.location.pathname == '/' ? (
+        {pathname == '/' ? (
           <div>{children()}</div>
         ) : (
           <div>
             <Header />
-            <Navigation {...this.props} />
-            <div
-              style={{
-                paddingTop: 160,
-                paddingLeft: 280,
-              }}
-            >
-              {children()}
-            </div>
+            <div className={styles.container}>{children()}</div>
+            {pathname.includes('lessons') && <Navigation {...this.props} />}
           </div>
         )}
       </div>

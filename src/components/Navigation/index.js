@@ -1,25 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import styles from './navigation.module.css'
 
 import SignOutButton from '../SignOut'
 import * as routes from '../../constants/routes'
 
 const Navigation = () => (
-  <div
-    style={{
-      position: 'fixed',
-      background: '#FBFAFC',
-      height: 'calc(100% - 132px)',
-      padding: 20,
-      top: 132,
-      fontSize: 16,
-      overflow: 'auto',
-      borderRight: '1px solid #F7F6F9',
-      zIndex: 10,
-    }}
-  >
+  <div className={styles.container}>
+    <h2 className={styles.header}>Navigation</h2>
     <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
+      <li>
+        <Link to="/lessons/intro/">Introduction</Link>
+      </li>
       <li>
         <Link to="/lessons/create-react-app/">Create React App</Link>
       </li>

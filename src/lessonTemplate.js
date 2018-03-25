@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import withAuthorization from './components/Session/withAuthorization'
+import styles from './lesson-template.module.css'
 
 function LessonTemplate({
   data, // this prop will be injected by the GraphQL query below.
@@ -9,7 +10,7 @@ function LessonTemplate({
   const { frontmatter, html } = markdownRemark
   console.log('LessonTemplate --', frontmatter.title)
   return (
-    <div className="blog-post-container">
+    <div className={styles.container}>
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
         <div

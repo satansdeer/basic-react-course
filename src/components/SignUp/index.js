@@ -73,6 +73,7 @@ class SignUpForm extends Component {
           }
           type="text"
           placeholder="Full Name"
+          style={{ display: 'block', marginBottom: 15, paddingLeft: 10 }}
         />
         <input
           value={email}
@@ -81,6 +82,7 @@ class SignUpForm extends Component {
           }
           type="text"
           placeholder="Email Address"
+          style={{ display: 'block', marginBottom: 15, paddingLeft: 10 }}
         />
         <input
           value={passwordOne}
@@ -91,6 +93,7 @@ class SignUpForm extends Component {
           }
           type="password"
           placeholder="Password"
+          style={{ display: 'block', marginBottom: 15, paddingLeft: 10 }}
         />
         <input
           value={passwordTwo}
@@ -101,6 +104,7 @@ class SignUpForm extends Component {
           }
           type="password"
           placeholder="Confirm Password"
+          style={{ display: 'block', marginBottom: 15, paddingLeft: 10 }}
         />
         <button disabled={isInvalid} type="submit">
           Sign Up
