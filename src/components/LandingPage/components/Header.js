@@ -61,7 +61,7 @@ const Header = () => (
     <h1 style={h1style}>Basic React</h1>
     <h2 style={h2style}>Learn ReactJS in just a couple of days.</h2>
     <a style={linkStyle} href="/signup">
-      Start learning now
+      Enroll for free
     </a>
     <p style={mottoStyle}>
       Start building real ReactJS apps. Jump in with best practices, solid

@@ -51,12 +51,17 @@ const AboutTheAuthor = () => (
           src="https://pp.userapi.com/c628027/v628027303/2f8f2/Lj9uA2PnXPQ.jpg"
         />
       </div>
-      <p style={textBlockStyle}>
-        Atque consequatur dignissimos dolor sunt nesciunt animi. Blanditiis ut
-        eligendi ratione reiciendis temporibus commodi accusamus quia. Fuga
-        quidem tenetur eos. Omnis qui adipisci possimus nihil in quis
-        voluptatibus rerum.
-      </p>
+      <section style={textBlockStyle}>
+        <p>
+          Hey, I’m Maksim Ivanov and I help frontend developers take their
+          coding skills and productivity to the next level.
+        </p>
+        <p>
+          I work as software engineer for more than 8 years. I’ve been
+          developing websites, online games and web applications — and I’d love
+          to help you become a more proficient frontend developer.
+        </p>
+      </section>
     </div>
   </div>
 )

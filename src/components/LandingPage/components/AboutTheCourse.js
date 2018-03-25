@@ -16,12 +16,22 @@ const headerStyle = {
 const AboutTheCourse = () => (
   <div style={containerStyle}>
     <h3 style={headerStyle}>What You'll Learn</h3>
-    <p>
-      Et architecto molestias nostrum dolores. Expedita fugiat minima minima
-      quia voluptas laboriosam rerum officia. Fugiat natus autem praesentium
-      officiis esse asperiores voluptatibus. Atque est fugiat eaque unde non
-      dolores enim. Aut delectus dolores cumque et minima.
-    </p>
+    <section>
+      <p>
+        This course covers all the <strong>essential topics</strong> reqruired
+        to build modern javascript applications using ReactJS.
+      </p>
+      <p>
+        First you will learn the fundamentals and the <strong>core idea</strong>{' '}
+        behind the ReactJS framework. You will learn to think in ReactJS terms.
+      </p>
+      <p>
+        Then you'll go through all the moving parts you'll need to build your
+        application and <strong>within minutes</strong> you’ll grasp Components,
+        JSX, State, Props, Events and Forms along with best practices to build
+        real apps.
+      </p>
+    </section>
   </div>
 )
 
