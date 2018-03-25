@@ -5,8 +5,10 @@ import { Header, Footer, AboutTheCourse, AboutTheAuthor } from './components'
 const LandingPage = () => (
   <div>
     <Header />
-    <AboutTheCourse />
-    <AboutTheAuthor />
+    <div style={{ padding: '0 15px' }}>
+      <AboutTheCourse />
+      <AboutTheAuthor />
+    </div>
     <Footer />
   </div>
 )

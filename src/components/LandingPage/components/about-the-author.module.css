@@ -1,0 +1,50 @@
+.container {
+  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 80px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(16,22,26,.1),0 4px 8px rgba(16,22,26,.2),0 18px 46px 6px rgba(16,22,26,.2);
+}
+
+.header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.imageWrapper {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  overflow: hidden;
+
+  @media (max-width: 500px){
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+.image {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.textBlock {
+  display: inline-block;
+  width: calc(100% - 245px);
+  margin-left: 40px;
+  vertical-align: top;
+
+  @media (max-width: 500px){
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+}
