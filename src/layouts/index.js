@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import './index.css'
 
 import withAuthentication from '../components/Session/withAuthentication'
@@ -35,6 +36,7 @@ class TemplateWrapper extends Component {
             >
               {children()}
             </div>
+            <Footer />
           </div>
         )}
       </div>
