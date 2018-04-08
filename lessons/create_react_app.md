@@ -4,6 +4,8 @@ date: "2017-11-07"
 title: "Create React App"
 ---
 
+`youtube:https://www.youtube.com/embed/t52xUdcSxNs`
+
 I recommend using `create-react-app` to set up the environment. It will save you a lot of time.
 
 Without `create-react-app` you'd have to manually set up webpack, babel, set up styles loading, hot-reload support, add boilerplate files and set up a testing environment.
