@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 import Header from '../components/Header'
 //import Footer from '../components/Footer'
 import Navigation from '../components/Navigation'
-import './index.css'
 import styles from './layout.module.css'
 
 import withAuthentication from '../components/Session/withAuthentication'
