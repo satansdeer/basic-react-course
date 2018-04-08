@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Header, Footer, AboutTheCourse, AboutTheAuthor } from './components'
+import { Header, AboutTheCourse, AboutTheAuthor } from './components'
 
 const LandingPage = () => (
   <div>
@@ -9,7 +9,6 @@ const LandingPage = () => (
       <AboutTheCourse />
       <AboutTheAuthor />
     </div>
-    <Footer />
   </div>
 )
 
