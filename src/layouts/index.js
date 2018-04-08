@@ -6,6 +6,7 @@ import Header from '../components/Header'
 //import Footer from '../components/Footer'
 import Navigation from '../components/Navigation'
 import styles from './layout.module.css'
+import 'prismjs/themes/prism-okaidia.css'
 
 import withAuthentication from '../components/Session/withAuthentication'
 

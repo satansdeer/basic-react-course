@@ -13,6 +13,7 @@
     "gatsby-plugin-typography": "^1.7.18",
     "gatsby-remark-embed-youtube": "^0.0.7",
     "gatsby-remark-images": "^1.5.56",
+    "gatsby-remark-prismjs": "^1.2.24",
     "gatsby-source-filesystem": "^1.5.27",
     "gatsby-transformer-remark": "^1.7.37",
     "react-helmet": "^5.2.0"

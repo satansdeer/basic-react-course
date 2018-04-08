@@ -20,7 +20,7 @@ npx create-react-app react-app
 
 If you have an older version – update it or install `create-react-app` globally and run it:
 
-```sh
+```bash
 yarn add global create-react-app
 create-react-app react-app
 ```
@@ -49,7 +49,7 @@ Open `src/App.js`, remove `logo.svg` import:
 
 Also, let's clean up the `render` method. Make the file look like this:
 
-```js
+```jsx
 import React, { Component } from "react";
 
 class App extends Component {

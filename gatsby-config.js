@@ -27,6 +27,14 @@ module.exports = {
               height: 400,
             },
           },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: 'language-',
+              inlineCodeMarker: null,
+              aliases: {},
+            },
+          },
         ],
       },
     },
