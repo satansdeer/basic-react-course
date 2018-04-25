@@ -1,5 +1,5 @@
 ---
-path: "/lessons/node-and-yarn"
+path: "/lessons/required-tools"
 date: "2017-11-07"
 title: "Required Tools"
 ---
@@ -26,6 +26,8 @@ There are several options – you can use some complex IDE, like [WebStorm](http
 * [Sublime](https://www.sublimetext.com/)
 * [Atom](https://atom.io/)
 * [VSCode](https://code.visualstudio.com/)
+
+In this course I'll use the __VSCode__ in all examples. So if you don't have any personal preference yet - pick the __VSCode__.
 
 Regardless of what editor you choose - don't forget to check if it has javascript and react syntax highlighting.
 

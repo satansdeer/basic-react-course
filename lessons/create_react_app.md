@@ -19,6 +19,8 @@ We'll use `create-react-app` to set up the boilerplate. I totally recommend usin
 
 Without `create-react-app` you'd have to manually set up webpack, babel, set up styles loading, hot-reload support, add boilerplate files and set up a testing environment.
 
+It makes some technical desicions for you, but if you don't like them or you need some specific setup - you can always `eject` the app and use custom setup. We won't cover ejecting process and manual configuration in this course.
+
 In modern node versions you don't even need to install the `create-react-app` package. If your node version is equal to or higher than 6 - you'll have the `npx` package available.
 
 'npx' allows you to run packages without installing them. With `create-react-app` it would look like this:

@@ -21,7 +21,7 @@ const Navigation = () => (
     <ul style={{ listStyleType: 'none', padding: 0, margin: 0 }}>
       <h3>Setup</h3>
       <li>
-        <Link to="/lessons/node-and-yarn/">👷 Required Tools</Link>
+        <Link to="/lessons/required-tools/">👷 Required Tools</Link>
       </li>
       <li>
         <Link to="/lessons/create-react-app/">👷 Create React App</Link>
