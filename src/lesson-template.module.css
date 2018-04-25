@@ -1,5 +1,5 @@
 .container {
-  padding-left: 280px; 
+  padding-left: 310px; 
   max-width: 1200px;
 
   @media (max-width: 500px){

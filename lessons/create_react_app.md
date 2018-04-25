@@ -6,13 +6,22 @@ title: "Create React App"
 
 `youtube:https://www.youtube.com/embed/t52xUdcSxNs`
 
-I recommend using `create-react-app` to set up the environment. It will save you a lot of time.
+## Contents
+
+* [Generating New Project](#generating_new_project)
+* [The Folder Structure](#the_folder_structure)
+* [Running The App](#running_the_app)
+
+<a name="generating_new_project"></a>
+## Generating New Project
+
+We'll use `create-react-app` to set up the boilerplate. I totally recommend using it when starting the new project, it's easy to use and save lots of time.
 
 Without `create-react-app` you'd have to manually set up webpack, babel, set up styles loading, hot-reload support, add boilerplate files and set up a testing environment.
 
-Currently, you don't even need to install `create-react-app`. If you have modern version node (>=6) – you can use `npx`. With npm, you don't have to install packages and you can just run them.
+In modern node versions you don't even need to install the `create-react-app` package. If your node version is equal to or higher than 6 - you'll have the `npx` package available.
 
-So if you have modern node – just run:
+'npx' allows you to run packages without installing them. With `create-react-app` it would look like this:
 
 ```sh
 npx create-react-app react-app
@@ -25,7 +34,8 @@ yarn add global create-react-app
 create-react-app react-app
 ```
 
-## Getting Familiar With File Structure
+<a name="the_folder_structure"></a>
+## The Folder Structure
 
 By default `create-react-app` creates a handful of files, let's go through them.
 
@@ -42,6 +52,9 @@ In `src` folder there is `index.js`, `App.js`, test for `App.js`, bunch of `css`
 * `index.js` is an entry point for our app. This is where `create-react-app` script starts to build your app from.
 * `App.js` is our app's root component, we'll get back to it later.
 * `registerServiceWorker.js` initializes a service worker for your app. Service workers are kind of proxies between your app and server, they intercept and modify navigation and resource requests. They allow making your app available on the slow internet or even offline. 
+
+<a name="running_the_app"></a>
+## Running The App
 
 Let's modify our app a bit, you know, to feel like at home.
 

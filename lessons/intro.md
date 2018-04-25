@@ -21,8 +21,6 @@ In this course I assume that you know the following technologies:
 
 ## P.S.
 
-As you can see – this course is WIP. I'm still working on some chapters and also on practical exercises for you to hone the newly acquired skills. 
-
 Let's keep in touch so I could update you as soon as something new will be added to this course.
 
 Join the [slack channel](https://join.slack.com/t/frontendartisans/shared_invite/enQtMzM1MjM3ODYyMDY1LWUwYzM4ZDc5ZDU1MjY1ZWM2OWZmNWUzZmZlNGJhOGRiYzA1ZmFiZDBkZDg2YmI3MzMyNTcxODVhZjgzMjNiZjc), you can ask any questions regarding this course there. 
