@@ -19,7 +19,7 @@ We'll use `create-react-app` to set up the boilerplate. I totally recommend usin
 
 Without `create-react-app` you'd have to manually set up webpack, babel, set up styles loading, hot-reload support, add boilerplate files and set up a testing environment.
 
-It makes some technical desicions for you, but if you don't like them or you need some specific setup - you can always `eject` the app and use custom setup. We won't cover ejecting process and manual configuration in this course.
+It makes some technical decisions for you, but if you don't like them or you need some specific setup - you can always `eject` the app and use a custom setup. We won't cover ejecting process and manual configuration in this course.
 
 In modern node versions you don't even need to install the `create-react-app` package. If your node version is equal to or higher than 6 - you'll have the `npx` package available.
 
@@ -46,14 +46,14 @@ In project root along with other files, it creates two folders `public` and `src
 In `public` folder we have static files `index.html`, `favicon.ico` and `manifest.json`.
 
 * `index.html` is our template, it contains page metadata, link to our `js` bundle and our layout with `<div id="root">` which we'll use later to render our app. 
-* `favicon.ico` is basically an icon of your site, it is usually shown along with site title on the tabs of your browser.
+* `favicon.ico` is basically an icon of your site, it is usually shown along with the site title on the tabs of your browser.
 * `manifest.json` allows installing your web-app to the home screen of the device. It provides useful information like what icon should be used or what should be the app name.
 
 In `src` folder there is `index.js`, `App.js`, test for `App.js`, bunch of `css` files, `logo.svg` and and `registerServiceWorker.js`.
 
 * `index.js` is an entry point for our app. This is where `create-react-app` script starts to build your app from.
 * `App.js` is our app's root component, we'll get back to it later.
-* `registerServiceWorker.js` initializes a service worker for your app. Service workers are kind of proxies between your app and server, they intercept and modify navigation and resource requests. They allow making your app available on the slow internet or even offline. 
+* `registerServiceWorker.js` initializes a service worker for your app. Service workers are kind of proxies between your app and server, they intercept and modify navigation and resource requests. They allow you to improve your app experience on slow internet connections and even offline.
 
 <a name="running_the_app"></a>
 ## Running The App
