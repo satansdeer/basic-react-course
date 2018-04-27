@@ -36,9 +36,7 @@ const Navigation = () => (
         <Link to="/lessons/jsx/">📝 JSX</Link>
       </li>
       <li>
-        <Link to="/lessons/custom-component/">
-          📝 Creating Custom Component
-        </Link>
+        <Link to="/lessons/components/">📝 Components</Link>
       </li>
       <li>
         <Link to="/lessons/styles/">📝 Styling Components</Link>
