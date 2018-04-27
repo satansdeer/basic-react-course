@@ -7,9 +7,11 @@ title: "JSX"
 ## Contents
 
 * [JSX Syntax](#the_syntax)
+* [Why Attributes Are CamelCased](#camel_case)
+* [Components And Elements](#components_and_elements)
 * [Why Import React](#why_import_react)
 
-<a name="the_syntax"></a>
+<a name="the_syntax" style="display: block; position: relative; top: -150px"></a>
 ## JSX Syntax
 
 As you can see `jsx` looks pretty much like `html`. But keep in mind that it is not `html`.
@@ -23,6 +25,12 @@ Here are a few key differences
 * You can use the javascript expression as components child. `<div>{ 1 + 1 }</div>`. It will be evaluated so in your browser you'll see `<div>2</div>`
 
 But the main difference is that `jsx` is actually a javascript expression. It evaluates to regular javascript object. This means that you can do anything that you could do with a regular javascript object. You can assign it to a variable or constant, use inside `if` statements and `for` loops and return from functions.
+
+<a name="camel_case" style="display: block; position: relative; top: -150px"></a>
+## Why Attributes Are CamelCased
+
+<a name="components_and_elements" style="display: block; position: relative; top: -150px"></a>
+## Components And Elements
 
 <a name="why_import_react" style="display: block; position: relative; top: -150px"></a>
 ## Why Import React
