@@ -1,7 +1,7 @@
 .container {
-  background: rgb(48,38,83);
   background: linear-gradient(63deg, rgba(48,38,83,1) 0%, rgba(62,38,119,1) 68%, rgba(74,33,148,1) 100%);
-  margin-bottom: 1.45rem;
+  background: rgb(48,38,83);
+  padding: 10px 15px;
   position: fixed;
   width: 100%;
   z-index: 11;
@@ -12,7 +12,7 @@
 
 .logo {
   display: inline-block;
-  height: 80px;
+  height: 60px;
   vertical-align: middle;
   margin: 0 15px 0 0;
 

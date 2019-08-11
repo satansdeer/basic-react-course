@@ -29,7 +29,19 @@ class TemplateWrapper extends Component {
         ) : (
           <div>
             <Header />
-            <div className={styles.container}>{children()}</div>
+            <div className={styles.container}>
+              <div>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/iyG9_UFJVoI"
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                />
+              </div>
+              {children()}
+            </div>
             {pathname.includes('lessons') && <Navigation {...this.props} />}
           </div>
         )}
